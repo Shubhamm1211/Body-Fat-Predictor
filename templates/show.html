@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Custom Dark Theme CSS -->
+    <style>
+        body {
+            background-image: url('/static/4.png'); /* For Flask projects */
+            opacity: 0.9;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #121212;
+            color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .alert {
+            background-color: #2d3a3a;
+            color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .alert h4 {
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #f1f1f1;
+        }
+
+        .btn-outline-success {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 50px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-outline-success:hover {
+            background-color: #0056b3;
+        }
+
+        .text-center {
+            margin-top: 20px;
+        }
+    </style>
+
+    <title>BodyFat Estimator</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Alert for Result -->
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading text-center">{{string}}</h4>
+            <hr>
+        </div>
+
+        <!-- Information Section -->
+        <p><b>{{inf}}</b></p>
+
+        <!-- Go Back Button -->
+        <div class="text-center">
+            <a href="/">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Go Back</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
+
+</body>
+
+</html>
